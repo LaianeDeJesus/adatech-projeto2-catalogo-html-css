@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    cursor: url("/assets/favicon.png"), auto;
+}
+
+/*Header*/
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    background: #fe8cb86f;
+    justify-content: space-around;
+    padding: 20px 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.321);
+}
+.logo img{
+    max-width: 200px;
+    height: 70px;
+}
+
+/*Inicio nav*/
+.container .nav-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-principal li{
+    color: rgba(0, 0, 0, 0.839);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+
+}
+.nav-principal a:hover{
+    color:#f6150d;
+}
+/*Final Nav*/
+/**Final Header/
+
+
+/*Home início*/
+section{
+    padding: 5% 10%;
+}
+.principal{
+    width: 100%;
+    height: 100vh;
+         /*Colocando imagem no fundo e definindo configurações para ela*/
+    background-image: url(/assets/banner-1.png);/*adicionei uma imagem da pasta assets no fundo do meu site*/
+    background-position: center; /*especifiquei a posição inicial da imagem de fundo (usei o center mas poderia ter dado posições mais expecíficas em 'px')*/
+    background-size: cover;/* cover : redimenciona automaticamente a imagem para cobrir o mais proximo da altura e largura do conteiner */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);/*cria uma grade com uma única coluna que preenche a largura total do contêiner.*/
+    align-items: center;
+}
+
+.descricao-principal h5{
+    color: #f6150d9f;
+    font-size: 20px;
+    text-transform: capitalize; /*transforma a primeira letra de cada palavra em uma string para maiúscula.*/
+    font-weight: 600; /*Defini o peso da fonte (gordinha ou magriha)*/
+}
+
+.descricao-principal h1{
+    color:rgba(0, 0, 0, 0.722);
+    font-size: 35px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.descricao-principal p{
+    color: rgba(0, 0, 0, 0.722);
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 20px;/*espaço entre os elementos*/
+}
+.botao-principal{
+    display: inline-block;/*permite que o elemento seja estilizado como um bloco, mas mantenha o fluxo do texto ao seu redor.*/
+    color: rgba(0, 0, 0, 0.722);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid #fe8cb85c;
+    padding: 12px 25px;
+    transform: all .42s ease;
+}
+
+.botao-principal:hover{
+    background-color: #fe8cb8;
+    color: rgba(0, 0, 0, 0.722);
+}
+/*Final Home*/
+
+/*Produtos*/
+.container-produtos{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    
+}
+
+.container-produtos img{
+
+    max-width: 400px;
+    height: 200px;
+}
+
+.center-text h2{
+    display: flex;
+    align-items: center;
+    
+}
+/*Fim Produtos*/
+
+/*Footer*/
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 20px 10px;
+    background: #fe8cb86f;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.321);
+}
+
+.footer .end-text{
+
+    align-items: end;
+}

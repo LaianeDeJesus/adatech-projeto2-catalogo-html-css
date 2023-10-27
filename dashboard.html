@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakura Izakaya - Painel de Controle</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- header -->
+
+    <header>
+      <a href="#" class="logo"><img src="./assets/logo.png" alt="logo da loja" /> </a>
+      
+
+      <div class="nav-principal">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html">Produtos</a></li>
+        </ul>
+        
+
+        
+      </div>
+    </header>
+
+    <main>
+
+    <!--Formulario/cadastro-->
+
+      <section class="container">
+        <p>Logado como <strong>Administrador</strong></p><br>
+      <div class="container-cadastro">
+        <h3>Cadastro</h3>
+        <form class="formulario">
+
+            <label for="image">Imagem</label>
+            <input type="file" id="image" name="image" /><br>
+
+            <label for="name">Nome do produto</label>
+            <input type="text" id="name" name="name" /><br>
+      
+            <label for="price">Preço do produto</label>
+            <input type="number" id="price" name="price" /><br><br>
+
+            <button class="botoes">Cadastrar</button>
+
+        </form>
+      </div>
+
+    <!--Tabela-->
+
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Quantidade</th>
+              <th>Nome</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Pocky Biscoito Morango Glico - 41g</td>
+              <td>R$14,90</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Pocky Biscoito Blueberry Glico - 41g</td>
+              <td>R$14,90</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Choco Pie Bolinho de Chocolate</td>
+              <td>R$16,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Final Tabela-->
+      <!--final Formulario/cadastro-->
+    </section>
+  </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="end-text">
+        <p>Copyright ©️ @2023. All Rights Reserved. Design By <a href="#" target="_blank">Laiane da Silva</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
